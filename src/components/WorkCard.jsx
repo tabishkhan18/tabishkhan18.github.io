@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaChevronRight } from 'react-icons/fa';
-
+import { PiCertificateFill } from "react-icons/pi";
 
 const items = [
   {
@@ -9,7 +9,9 @@ const items = [
     time: '2 months',
     company: 'iLearnings',
     role: 'Full Stack Developer Intern | React & Node',
-    desc: 
+    location: 'Pune, India',
+    certificate: 'https://drive.google.com/file/d/1J4OPXlBwsNUby6XC2lXnVzbo5hviflAD/view?usp=drive_link',
+    desc:
       <ul className='list-disc'>
         <li>Developed responsive landing pages using HTML, Tailwind CSS, and React.js.</li>
         <li>Created web pages for training programs on Salesforce, Data Analysis, Python and Career guidance with the founder.</li>
@@ -22,7 +24,9 @@ const items = [
     time: '3 months',
     company: 'SoftMaji Infotech',
     role: 'Graphic Designer Intern | Canva',
-    desc: 
+    location: 'Lucknow, India',
+    certificate: 'https://drive.google.com/file/d/1CGQ6Su88Ez4t25IDksmUKfqeIR9scdc3/view?usp=drive_link',
+    desc:
       <ul className='list-disc'>
         <li>Cloned the &quot;FeeFlow.in&quot; website using HTML, CSS, and JavaScript.</li>
         <li>Managed blog posts through the WordPress Admin Panel.</li>
@@ -30,8 +34,8 @@ const items = [
         <li>Listed products on e-commerce platforms like Meesho and Flipkart.</li>
       </ul>,
   },
-  
-  
+
+
 ];
 
 const WorkCard = () => {
@@ -72,7 +76,15 @@ const WorkCard = () => {
             className={`overflow-hidden transition-all duration-300 ease-in-out ${activeKey === item.key ? 'max-h-96' : 'max-h-0'
               }`}
           >
-            <div className="px-10 lg:px-40 py-5 text-sm lg:text-lg font-thin bg-neutral-800 text-neutral-300">
+            <div className="px-10 flex justify-between items-center lg:px-36 py-5 text-sm lg:text-lg bg-neutral-800 text-neutral-300">
+              <a href={item.certificate} target='_blank' className='cursor-pointer text-neutral-400 hover:text-white hover:scale-110 transition-all duration-200 ease-in-out'>
+                <PiCertificateFill size={30}/>
+              </a>
+              <div>
+                {item.location}
+              </div>
+            </div>
+            <div className="px-10 lg:px-40 py-5 text-sm lg:text-lg bg-neutral-800 text-neutral-300">
               {item.desc}
             </div>
           </div>

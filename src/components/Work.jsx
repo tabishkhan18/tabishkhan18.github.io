@@ -13,10 +13,9 @@ const Work = () => {
         <WorkCard />
       </div>
       <div className="totalworkex flex flex-col items-end lg:px-20 px-5">
-        <h1 className="font-thin text-neutral-400 text-2xl">Work experience</h1>
-        <h1 className="font-thin italic text-white text-2xl">5 Months</h1>
+        <h1 className="text-neutral-400 text-2xl">Work experience</h1>
+        <h1 className="italic text-white text-2xl">5 Months</h1>
       </div>
-
     </div>
   );
 };
