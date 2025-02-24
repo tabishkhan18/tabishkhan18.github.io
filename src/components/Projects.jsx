@@ -24,7 +24,7 @@ const Projects = () => {
                 </h1>
 
                 {/* Spotify */}
-                <div className='projectcard bg-neutral-900 border-b border-neutral-700'>
+                <div className='projectcard bg-neutral-900 '>
                     <div className='flex h-lvh lg:flex-row flex-col lg:items-center justify-evenly'>
                         <div className="skills lg:py-5 lg:pt-5 pt-5 px-5 lg:ps-5 lg:w-1/4">
                             <h1 className="heading py-10 uppercase text-white font-semibold text-xl">
@@ -49,12 +49,12 @@ const Projects = () => {
                             </h1>
                             <div className="buttons flex gap-5 py-10">
                                 <a href={links.github.spotify}>
-                                    <button className='font-semibold transition ease-in-out duration-300 bg-black text-white hover:text-black hover:bg-white rounded-full p-5 border border-neutral-500'>
+                                    <button className='font-semibold  transition ease-in-out duration-300 bg-black text-white hover:text-black hover:bg-white rounded-full p-5 border border-neutral-500'>
                                         <TbBrandGithubFilled size={25} />
                                     </button>
                                 </a>
                                 <a href={links.live.spotify}>
-                                    <button className='font-semibold transition ease-in-out duration-300 bg-white text-black hover:text-white hover:bg-black rounded-full p-5 relative right-10'>
+                                    <button className='font-semibold hover:rotate-45 transition ease-in-out duration-300 bg-white text-black hover:text-white hover:bg-black rounded-full p-5 relative right-10'>
                                         <BsArrowUpRight size={25} />
                                     </button>
                                 </a>
@@ -100,7 +100,7 @@ const Projects = () => {
                                     </button>
                                 </a>
                                 <a href={links.live.todo}>
-                                    <button className='font-semibold transition ease-in-out duration-300 bg-white text-black hover:text-white hover:bg-black rounded-full p-5 relative right-10'>
+                                    <button className='font-semibold hover:rotate-45 transition ease-in-out duration-300 bg-white text-black hover:text-white hover:bg-black rounded-full p-5 relative right-10'>
                                         <BsArrowUpRight size={25} />
                                     </button>
                                 </a>
@@ -111,7 +111,7 @@ const Projects = () => {
 
 
                 {/* Triangle Calculator */}
-                <div className='projectcard bg-neutral-900 border-t border-neutral-700'>
+                <div className='projectcard bg-neutral-900'>
                     <div className='flex h-lvh lg:flex-row flex-col lg:items-center justify-evenly'>
                         <div className="skills lg:py-5 lg:pt-10 pt-5 px-5 lg:ps-5 lg:w-1/4">
                             <h1 className="heading py-10 uppercase text-white font-semibold text-xl">
@@ -138,7 +138,7 @@ const Projects = () => {
                                     </button>
                                 </a>
                                 <a href={links.live.triangle}>
-                                    <button className='font-semibold transition ease-in-out duration-300 bg-white text-black hover:text-white hover:bg-black rounded-full p-5 relative right-10'>
+                                    <button className='font-semibold hover:rotate-45 transition ease-in-out duration-300 bg-white text-black hover:text-white hover:bg-black rounded-full p-5 relative right-10'>
                                         <BsArrowUpRight size={25} />
                                     </button>
                                 </a>
