@@ -53,14 +53,24 @@ const Contact = () => {
         </section>
       </div>
       <div className="md:flex hidden justify-center mt-10 mb-20">
-        <SocialMedia/>
+        <SocialMedia />
       </div>
       <div className="scrollup mt-0 md:mt-32">
         <ScrollUp />
       </div>
       <div className="footer flex justify-between md:p-10 p-5">
-        <h1 className='text-neutral-500 md:text-md text-xs font-semibold flex gap-1'>&copy;<HiMiniCodeBracket style={{ fontSize: '1rem', fontWeight: 'bold' }}/>Tabish 2025.</h1>
-        <h1 className='text-neutral-500 md:text-md text-xs font-semibold'><a href="mailto:tabishkhan1811@gmail.com" className='cursor-pointer'>tabishkhan1811@gmail.com</a></h1>
+        <h1
+          className='text-neutral-500 md:text-md text-xs font-semibold flex gap-1'>
+          &copy;<HiMiniCodeBracket style={{ fontSize: '1rem', fontWeight: 'bold' }} />Tabish 2025.
+        </h1>
+        <h1 className='text-neutral-500 md:text-md text-xs font-semibold'>
+          <a
+            href="mailto:tabishkhan1811@gmail.com"
+            className='cursor-pointer hover:text-black hover:underline transition-all duration-200 ease-in-out'
+          >
+            tabishkhan1811@gmail.com
+          </a>
+        </h1>
       </div>
     </div>
   )
