@@ -57,7 +57,7 @@ const Projects = () => {
                                     Google APIs
                                 </h1>
                             </div>
-                            <h1 className="pt-5 text-neutral-400 leading-relaxed text-sm">
+                            <h1 className="pt-5 text-neutral-400 leading-relaxed">
                                 <span className='text-white font-semibold italic'>Uber Clone</span> – Developed a mobile-first Uber clone using the <span className='text-white font-semibold italic'>MERN Stack</span> with real-time ride updates via<span className='text-white font-semibold italic'> Socket.io </span>and live tracking through<span className='text-white font-semibold italic'> Google Maps API</span>. Implemented<span className='text-white font-semibold italic'> JWT authentication</span>, debounced<span className='text-white font-semibold italic'> Google Places API</span> calls for performance. The frontend was built with<span className='text-white font-semibold italic'> Vite + React</span> and styled using<span className='text-white font-semibold italic'> Tailwind CSS</span>.
                             </h1>
                             <div className="buttons flex gap-5 py-10">
@@ -105,7 +105,7 @@ const Projects = () => {
                                     React
                                 </h1>
                             </div>
-                            <h1 className="pt-5 text-neutral-400 leading-relaxed text-sm">
+                            <h1 className="pt-5 text-neutral-400 leading-relaxed">
                                 <span className='text-white font-semibold italic'>Todo Manager</span> – a responsive React-based website styled with Tailwind CSS, enabling <span className='text-white font-semibold italic'>task creation, editing, and deletion</span>. Integrated with <span className='text-white font-semibold italic'>local storage for offline functionality</span>, it ensures todos are preserved and reloaded seamlessly upon reopening the site.</h1>
                             <div className="buttons flex gap-5 py-10">
                                 <a href={links.github.todo} target='_blank'>
@@ -142,7 +142,7 @@ const Projects = () => {
                                     JavaScript
                                 </h1>
                             </div>
-                            <h1 className="pt-5 text-neutral-400 leading-relaxed text-sm">
+                            <h1 className="pt-5 text-neutral-400 leading-relaxed">
                                 <span className='text-white font-semibold italic'>Triangle Calculator</span> – a responsive website created using JavaScript, allowing users to <span className='text-white font-semibold italic'>create triangles</span> by inputting values and calculating properties like <span className='text-white font-semibold italic'>area, perimeter, and angles</span> with interactive <span className='text-white italic font-semibold'>event handling</span> and <span className='text-white italic font-semibold'>canvas drawing functions.</span>
                             </h1>
                             <div className="buttons flex gap-5 py-10">

@@ -32,9 +32,9 @@ const Home = () => {
             <div className="home flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center lg:h-lvh px-10 lg:px-52 lg:py-20 py-32 bg-neutral-900">
                 <div className="homeInfo font-sans">
                     <div className="headings my-10">
-                        <h4 className='text-white lg:text-xl text-sm  uppercase '>Hello, I'm</h4>
-                        <h1 className='text-white lg:text-8xl text-5xl uppercase '>Tabish Khan</h1>
-                        <h3 className='text-white lg:text-3xl text-xl uppercase'>{currentHeading}<span className="blinking-cursor  lg:text-5xl text-3xl">|</span></h3>
+                        <h4 className='text-neutral-400 lg:text-xl text-sm font-mono my-4'>Hello, I'm</h4>
+                        <h1 className='text-white lg:text-8xl text-5xl font-mono my-4'>Tabish Khan</h1>
+                        <h3 className='text-neutral-400 lg:text-3xl text-xl font-mono my-4'>{currentHeading}<span className="blinking-cursor  lg:text-3xl text-xl">|</span></h3>
                     </div>
                     <div className="buttons flex gap-5 lg:gap-10">
                         <a href="https://drive.google.com/file/d/1zNVhm07LxI5UGl02kqlS98YK-QWicz8m/view?usp=drive_link" target='_blank' download><button className='transition ease-in-out duration-300 lg:px-5 px-3 py-2 text-white border border-neutral-500 hover:text-neutral-800 hover:bg-white rounded-full '>Download Resume</button></a>

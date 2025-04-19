@@ -60,7 +60,7 @@ const Contact = () => {
       </div>
       <div className="footer flex justify-between md:p-10 p-5">
         <h1
-          className='text-neutral-500 md:text-md text-xs font-semibold flex gap-1'>
+          className='text-neutral-500 md:text-md text-xs font-semibold font-mono flex gap-1'>
           &copy;<HiMiniCodeBracket style={{ fontSize: '1rem', fontWeight: 'bold' }} />Tabish 2025.
         </h1>
         <h1 className='text-neutral-500 md:text-md text-xs font-semibold'>

@@ -1,7 +1,5 @@
-import React from "react";
-import { useEffect, useRef, useState } from "react";
-import { BsArrowRight } from "react-icons/bs";
-import { BsArrowLeft } from "react-icons/bs";
+import React, { useEffect, useRef, useState } from "react";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 
 export default function ImageCarousel() {
   const [index, setIndex] = useState(1); // Start from 1 because 0 will be the cloned last slide
@@ -31,12 +29,15 @@ export default function ImageCarousel() {
     if (hovering) return;
 
     const interval = setInterval(() => {
-      setIndex((prev) => prev + 1);
+      setIndex((prev) => {
+        const nextIndex = prev + 1;
+        return nextIndex >= extendedImages.length ? 1 : nextIndex; // Reset to 1 if out of bounds
+      });
       setIsTransitioning(true);
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [hovering]);
+  }, [hovering, extendedImages.length]);
 
   // Handle the looping logic
   useEffect(() => {
@@ -57,12 +58,18 @@ export default function ImageCarousel() {
   }, [index, extendedImages.length]);
 
   const goToPrev = () => {
-    setIndex((prev) => prev - 1);
+    setIndex((prev) => {
+      const nextIndex = prev - 1;
+      return nextIndex < 0 ? extendedImages.length - 2 : nextIndex; // Reset to last valid index if out of bounds
+    });
     setIsTransitioning(true);
   };
 
   const goToNext = () => {
-    setIndex((prev) => prev + 1);
+    setIndex((prev) => {
+      const nextIndex = prev + 1;
+      return nextIndex >= extendedImages.length ? 1 : nextIndex; // Reset to 1 if out of bounds
+    });
     setIsTransitioning(true);
   };
 
@@ -74,7 +81,7 @@ export default function ImageCarousel() {
     >
       <div
         ref={slideRef}
-        className={`flex w-full  ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
+        className={`flex w-full ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {extendedImages.map((src, i) => (

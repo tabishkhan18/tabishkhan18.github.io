@@ -62,10 +62,10 @@ const WorkCard = () => {
                 </div>
               </div>
               <div className=" flex lg:flex-row flex-col px-5 lg:ps-0 justify-start items-start lg:items-center text-xl lg:gap-28 w-2/3">
-                <div className="company lg:w-1/3 text-base lg:text-xl">
+                <div className="company font-mono lg:w-1/3 text-base lg:text-xl">
                   {item.company}
                 </div>
-                <h1 className='role lg:w-2/3 text-base lg:text-xl'>
+                <h1 className='role font-mono lg:w-2/3 text-base lg:text-xl'>
                   {item.role}
                 </h1>
               </div>
