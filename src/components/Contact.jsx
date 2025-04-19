@@ -1,6 +1,7 @@
 import React from 'react'
 import ScrollUp from './ScrollUp'
-import { HiMiniCodeBracket } from "react-icons/hi2";
+import { AiOutlineCopyrightCircle } from "react-icons/ai";
+
 import SocialMedia from './SocialMedia';
 
 const Contact = () => {
@@ -58,11 +59,18 @@ const Contact = () => {
       <div className="scrollup mt-0 md:mt-32">
         <ScrollUp />
       </div>
-      <div className="footer flex justify-between md:p-10 p-5">
-        <h1
-          className='text-neutral-500 md:text-md text-xs font-semibold font-mono flex gap-1'>
-          &copy;<HiMiniCodeBracket style={{ fontSize: '1rem', fontWeight: 'bold' }} />Tabish 2025.
-        </h1>
+      <div className="footer flex justify-between md:px-10 md:py-10  p-5">
+        <div
+          className='text-neutral-500 text-xl font-semibold font-mono items-end flex gap-1'>
+          <p className='font-sans text-xs gap-1 items-center flex'>
+            <AiOutlineCopyrightCircle size={14} />
+          </p>
+          <img className='h-5 invert-[100%]' src="/logo.png" alt="" />
+          <p className='text-xs font-sans'>
+          2025.
+          </p>
+
+        </div>
         <h1 className='text-neutral-500 md:text-md text-xs font-semibold'>
           <a
             href="mailto:tabishkhan1811@gmail.com"

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
-import { HiMiniCodeBracket } from "react-icons/hi2";
-
+import { AiOutlineCopyrightCircle } from "react-icons/ai";
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -64,7 +63,17 @@ const Menu = () => {
             </li>
           </ul>
         </div>
-        <h1 className='text-neutral-500 mt-60 text-xs font-semibold flex justify-center gap-1'>&copy;<HiMiniCodeBracket style={{ fontSize: '1rem', fontWeight: 'bold' }} />Tabish 2025.</h1>
+        <div
+          className='text-neutral-500 text-xl mt-60 font-semibold font-mono items-end justify-center flex gap-1'>
+          <p className='font-sans text-xs gap-1 items-center flex'>
+            <AiOutlineCopyrightCircle size={14} />
+          </p>
+          <img className='h-5' src="/logo.png" alt="" />
+          <p className='text-xs font-sans'>
+            2025.
+          </p>
+
+        </div>
       </div>
 
     </div>
