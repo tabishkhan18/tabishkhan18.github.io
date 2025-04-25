@@ -6,27 +6,52 @@ import ImageCarousel from './ImageCarousel';
 const Projects = () => {
     const links = {
         github: {
-            uber: "https://github.com/Tabishkhan18/Uber",
-            todo: "https://github.com/Tabishkhan18/ToDo-Manager",
-            triangle: "https://github.com/Tabishkhan18/Triangle-Calculator",
+            uber: "https://github.com/tabishkhan18/Uber",
+            hostelhive: "https://github.com/tabishkhan18/HostelHive",
+            triangle: "https://github.com/tabishkhan18/Triangle-Calculator",
         },
         live: {
-            uber: "https://uber-p6f3.onrender.com/",
-            todo: "https://tabishkhan18.github.io/ToDo-Manager",
+            uber: "https://uber-mern-app.onrender.com/",
+            hostelhive: "https://hostelhive.onrender.com/",
             triangle: "https://tabishkhan18.github.io/Triangle-Calculator",
         }
-    }
+    };
+
+    const uberImages = [
+        '/uber/1Uber.png',
+        '/uber/2Uber.png',
+        '/uber/3Uber.png',
+        '/uber/4Uber.png',
+        '/uber/5Uber.png',
+        '/uber/6Uber.png',
+        '/uber/7Uber.png',
+        '/uber/8Uber.png',
+        '/uber/9Uber.png',
+    ];
+
+    const hostelHiveImages = [
+        '/hostelhive/1hostelhive.png',
+        '/hostelhive/2hostelhive.png',
+        '/hostelhive/3hostelhive.png',
+        '/hostelhive/4hostelhive.png',
+        '/hostelhive/5hostelhive.png',
+        '/hostelhive/6hostelhive.png',
+        '/hostelhive/7hostelhive.png',
+        '/hostelhive/8hostelhive.png',
+        '/hostelhive/9hostelhive.png',
+        '/hostelhive/10hostelhive.png',
+    ];
 
     return (
         <div id='projects'>
-            <div className="project bg-neutral-900 flex flex-col py-10">
+            <div className="project bg-neutral-900 flex flex-col border-b border-neutral-700 py-10">
                 <h1 className="heading text-center lg:py-14 pb-10 uppercase text-white font-semibold text-xl">
                     Projects
                 </h1>
 
-                {/* Spotify */}
-                <div className='projectcard bg-neutral-900 '>
-                    <div className='flex h-lvh lg:flex-row flex-col lg:items-center justify-evenly'>
+                {/* Uber */}
+                <div className='projectcard h-fit bg-neutral-900 '>
+                    <div className='flex  lg:flex-row flex-col lg:items-center justify-evenly'>
                         <div className="skills lg:py-5 lg:pt-5 pt-5 px-5 lg:ps-5 lg:w-1/4">
                             <h1 className="heading py-10 uppercase text-white font-semibold text-xl">
                                 Uber Clone
@@ -74,46 +99,52 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="aboutimage py-10 lg:pe-5">
-                            {/* <img src="./spotify.png" alt="image" className='lg:w-[50rem] rounded-lg' /> */}
-                            <ImageCarousel/>
+                            <ImageCarousel images={uberImages} />
                         </div>
                     </div>
                 </div>
 
 
-                {/* Todo Manager */}
-                <div className='projectcard bg-neutral-900 border-y border-neutral-700'>
-                    <div className='flex h-lvh lg:flex-row flex-col-reverse lg:items-center justify-evenly'>
+                {/* HostelHive */}
+                <div className='projectcard h-fit bg-neutral-950 border-y border-neutral-700'>
+                    <div className='flex  lg:flex-row flex-col-reverse lg:items-center justify-evenly'>
                         <div className="aboutimage py-10 lg:pe-5">
-                            <img src="./todo.png" alt="image" className='lg:w-[50rem] rounded-lg' />
+                            <ImageCarousel images={hostelHiveImages} />
                         </div>
                         <div className="skills lg:py-5 lg:pt-10 pt-5 px-5 lg:ps-5 lg:w-1/4">
                             <h1 className="heading py-10 uppercase text-white font-semibold text-xl">
-                                Todo Manager
+                                HostelHive
                             </h1>
                             <div className="flex flex-wrap gap-4">
-                                <h1 className="px-3 py-1 rounded-full border border-neutral-500 text-neutral-400 leading-relaxed text-base">
-                                    Html
+                            <h1 className="px-3 py-1 rounded-full border border-neutral-500 text-neutral-400 leading-relaxed text-base">
+                                    Node.js
                                 </h1>
                                 <h1 className="px-3 py-1 rounded-full border border-neutral-500 text-neutral-400 leading-relaxed text-base">
-                                    Tailwind
-                                </h1>
-                                <h1 className="px-3 py-1 rounded-full border border-neutral-500 text-neutral-400 leading-relaxed text-base">
-                                    JavaScript
+                                    Express.js
                                 </h1>
                                 <h1 className="px-3 py-1 rounded-full border border-neutral-500 text-neutral-400 leading-relaxed text-base">
                                     React
                                 </h1>
+                                <h1 className="px-3 py-1 rounded-full border border-neutral-500 text-neutral-400 leading-relaxed text-base">
+                                    MongoDB
+                                </h1>
+                                <h1 className="px-3 py-1 rounded-full border border-neutral-500 text-neutral-400 leading-relaxed text-base">
+                                    JWT
+                                </h1>
+                                <h1 className="px-3 py-1 rounded-full border border-neutral-500 text-neutral-400 leading-relaxed text-base">
+                                    Tailwind CSS
+                                </h1>
                             </div>
                             <h1 className="pt-5 text-neutral-400 leading-relaxed">
-                                <span className='text-white font-semibold italic'>Todo Manager</span> – a responsive React-based website styled with Tailwind CSS, enabling <span className='text-white font-semibold italic'>task creation, editing, and deletion</span>. Integrated with <span className='text-white font-semibold italic'>local storage for offline functionality</span>, it ensures todos are preserved and reloaded seamlessly upon reopening the site.</h1>
+                                <span className='text-white font-semibold italic'>HostelHive</span> – Built a hostel management system using the <span className='text-white font-semibold italic'>MERN stack</span>. Features dual<span className='text-white font-semibold italic'> JWT-authenticated portals</span> for students and admins, invoice generation, <span className='text-white font-semibold italic'>Excel exports</span>, mess leave requests, complaint handling, and full student management - all in a dark-themed interface using<span className='text-white font-semibold italic'> Tailwind CSS</span>.
+                            </h1>
                             <div className="buttons flex gap-5 py-10">
-                                <a href={links.github.todo} target='_blank'>
+                                <a href={links.github.hostelhive} target='_blank'>
                                     <button className='font-semibold transition ease-in-out duration-300 bg-black text-white hover:text-black hover:bg-white rounded-full p-5 border border-neutral-500'>
                                         <TbBrandGithubFilled size={25} />
                                     </button>
                                 </a>
-                                <a href={links.live.todo} target='_blank'>
+                                <a href={links.live.hostelhive} target='_blank'>
                                     <button className='font-semibold hover:rotate-45 transition ease-in-out duration-300 bg-white text-black hover:text-white hover:bg-black rounded-full p-5 relative right-10'>
                                         <BsArrowUpRight size={25} />
                                     </button>
@@ -125,8 +156,8 @@ const Projects = () => {
 
 
                 {/* Triangle Calculator */}
-                <div className='projectcard bg-neutral-900'>
-                    <div className='flex h-lvh lg:flex-row flex-col lg:items-center justify-evenly'>
+                <div className='projectcard h-fit bg-neutral-900'>
+                    <div className='flex  lg:flex-row flex-col lg:items-center justify-evenly'>
                         <div className="skills lg:py-5 lg:pt-10 pt-5 px-5 lg:ps-5 lg:w-1/4">
                             <h1 className="heading py-10 uppercase text-white font-semibold text-xl">
                                 Triangle Calculator

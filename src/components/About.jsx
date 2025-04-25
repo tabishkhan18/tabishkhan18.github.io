@@ -17,7 +17,7 @@ const About = () => {
           </h1>
         </div>
         <div className="aboutimage lg:w-1/3 py-20 lg:py-0" >
-          <img src="./tabish3.jpg" alt="image" className='w-96 grayscale hover:grayscale-[25%] hover:scale-110 rounded-3xl transition ease-in-out duration-300 ' />
+          <img src="/story.jpg" alt="image" className='w-96 grayscale hover:grayscale-0 hover:scale-110 rounded-3xl transition ease-in-out duration-300 ' />
         </div>
       </div>
       <h1 className="lg:pt-32 italic text-center leading-loose text-white font-thin text-xl">

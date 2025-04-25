@@ -1,24 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 
-export default function ImageCarousel() {
+export default function ImageCarousel({ images }) {
   const [index, setIndex] = useState(1); // Start from 1 because 0 will be the cloned last slide
   const [isTransitioning, setIsTransitioning] = useState(true);
   const [hovering, setHovering] = useState(false);
   const slideRef = useRef();
 
-  const images = [
-    '/1Uber.png',
-    '/2Uber.png',
-    '/3Uber.png',
-    '/4Uber.png',
-    '/5Uber.png',
-    '/6Uber.png',
-    '/7Uber.png',
-    '/8Uber.png',
-    '/9Uber.png',
-  ];
-
+  // Extend the images array to include clones for infinite scrolling
   const extendedImages = [
     images[images.length - 1], // Clone of last
     ...images,
@@ -75,7 +64,7 @@ export default function ImageCarousel() {
 
   return (
     <div
-      className="relative lg:w-[50rem] overflow-hidden mx-auto rounded-lg"
+      className="relative lg:w-[50rem] overflow-hidden mx-auto rounded-xl border border-neutral-600"
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
     >
@@ -89,7 +78,7 @@ export default function ImageCarousel() {
             key={i}
             src={src}
             alt={`Slide ${i}`}
-            className="lg:w-[50rem] flex-shrink-0 object-cover"
+            className="lg:w-[50rem] flex-shrink-0 object-cover rounded-xl"
           />
         ))}
       </div>
