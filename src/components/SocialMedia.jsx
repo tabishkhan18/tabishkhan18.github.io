@@ -39,7 +39,7 @@ const SocialMedia = () => {
         </a>
 
         {/* github */}
-        <a href="https://github.com/Tabishkhan18" target='_blank'>
+        <a href="https://github.com/tabishkhan18" target='_blank'>
 
           <div className="socialcontainer">
             <div className="icon social-icon-4-4">
@@ -56,7 +56,7 @@ const SocialMedia = () => {
         </a>
 
         {/* LinkedIn */}
-        <a href="https://www.linkedin.com/in/tabish-khan-61a14124a" target='_blank'>
+        <a href="https://www.linkedin.com/in/tabishkhan1824/" target='_blank'>
 
           <div className="socialcontainer">
             <div className="icon social-icon-3-3">
