@@ -23,7 +23,7 @@ const items = [
     date: 'June - Sep 2023',
     time: '3 months',
     company: 'SoftMaji Infotech',
-    role: 'Graphic Designer Intern | Canva',
+    role: 'Graphic Designer Intern | Figma & Canva',
     location: 'Lucknow, India',
     certificate: 'https://drive.google.com/file/d/1CGQ6Su88Ez4t25IDksmUKfqeIR9scdc3/view?usp=drive_link',
     desc:

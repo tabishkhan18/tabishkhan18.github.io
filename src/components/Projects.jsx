@@ -18,28 +18,28 @@ const Projects = () => {
     };
 
     const uberImages = [
-        '/uber/1Uber.png',
-        '/uber/2Uber.png',
-        '/uber/3Uber.png',
-        '/uber/4Uber.png',
-        '/uber/5Uber.png',
-        '/uber/6Uber.png',
-        '/uber/7Uber.png',
-        '/uber/8Uber.png',
-        '/uber/9Uber.png',
+        '/uber/1Uber.jpg',
+        '/uber/2Uber.jpg',
+        '/uber/3Uber.jpg',
+        '/uber/4Uber.jpg',
+        '/uber/5Uber.jpg',
+        '/uber/6Uber.jpg',
+        '/uber/7Uber.jpg',
+        '/uber/8Uber.jpg',
+        '/uber/9Uber.jpg',
     ];
 
     const hostelHiveImages = [
-        '/hostelhive/1hostelhive.png',
-        '/hostelhive/2hostelhive.png',
-        '/hostelhive/3hostelhive.png',
-        '/hostelhive/4hostelhive.png',
-        '/hostelhive/5hostelhive.png',
-        '/hostelhive/6hostelhive.png',
-        '/hostelhive/7hostelhive.png',
-        '/hostelhive/8hostelhive.png',
-        '/hostelhive/9hostelhive.png',
-        '/hostelhive/10hostelhive.png',
+        '/hostelhive/1hostelhive.jpg',
+        '/hostelhive/2hostelhive.jpg',
+        '/hostelhive/3hostelhive.jpg',
+        '/hostelhive/4hostelhive.jpg',
+        '/hostelhive/5hostelhive.jpg',
+        '/hostelhive/6hostelhive.jpg',
+        '/hostelhive/7hostelhive.jpg',
+        '/hostelhive/8hostelhive.jpg',
+        '/hostelhive/9hostelhive.jpg',
+        '/hostelhive/10hostelhive.jpg',
     ];
 
     return (
@@ -190,7 +190,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="aboutimage py-10 lg:pe-5">
-                            <img src="./triangle-calculator.png" alt="image" className='lg:w-[50rem] rounded-lg' />
+                            <img src="./triangle-calculator.jpg" alt="image" className='lg:w-[50rem] rounded-lg' />
                         </div>
                     </div>
                 </div>

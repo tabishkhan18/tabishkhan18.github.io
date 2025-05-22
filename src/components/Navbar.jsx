@@ -8,7 +8,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar z-10 fixed top-0 right-0 left-0 flex justify-between items-center md:px-20 px-10 bg-neutral-900 h-16">
                 <div className="logo flex items-center font-mono font-semibold text-xl text-white">
-                    <img className='w-32' src="/logo.png" alt="" />
+                    <img className='w-32' src="/logo2.png" alt="" />
                 </div>
                 <div className="menu hidden md:flex">
                     <ul className='flex gap-5'>

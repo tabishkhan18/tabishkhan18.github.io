@@ -68,7 +68,7 @@ const Menu = () => {
           <p className='font-sans text-xs gap-1 items-center flex'>
             <AiOutlineCopyrightCircle size={14} />
           </p>
-          <img className='h-5' src="/logo.png" alt="" />
+          <img className='h-5' src="/logo2.png" alt="" />
           <p className='text-xs font-sans'>
             2025.
           </p>
