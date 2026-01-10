@@ -17,13 +17,9 @@ const Work = () => {
       role: "Full Stack Developer",
       location: "New Delhi, India",
       // desc: <ul className="list-disc">
-      //     <li>Comming Soon...</li>
+      //     <p>Comming Soon...</p>
           
       //   </ul>,
-      desc: <ul className="list-disc">
-          <p>Comming Soon...</p>
-          
-        </ul>,
     },
     {
       key: "2",
