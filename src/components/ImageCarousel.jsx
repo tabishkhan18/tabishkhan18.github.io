@@ -64,7 +64,7 @@ export default function ImageCarousel({ images }) {
 
   return (
     <div
-      className="relative lg:w-[50rem] overflow-hidden mx-auto rounded-xl border border-neutral-600"
+      className="relative lg:w-[50rem] overflow-hidden mx-5 lg:mx-auto rounded-xl border border-neutral-600"
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
     >

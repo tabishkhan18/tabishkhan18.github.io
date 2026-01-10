@@ -29,7 +29,7 @@ const Home = () => {
 
     return (
         <div id='home'>
-            <div className="home flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center lg:h-lvh px-10 lg:px-52 lg:py-20 py-32 bg-neutral-900">
+            <div className="home flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center lg:h-dvh px-10 lg:px-52 lg:py-20 py-32 bg-neutral-900">
                 <div className="homeInfo font-sans">
                     <div className="headings my-10">
                         <h4 className='text-neutral-400 lg:text-xl text-sm font-mono my-4'>Hello, I'm</h4>
