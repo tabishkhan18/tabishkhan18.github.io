@@ -28,7 +28,7 @@ const Skills = () => {
                     Also some bunch of ordinary skills:
                 </h1>
                 <h1 className="py-3 md:pe-20 md:leading-loose text-neutral-500 uppercase font-semibold md:text-xl text-md">
-                    VS code, Chrome dev-tools, postman, figma, canva, wordpress and render. 
+                    VS code, Chrome dev-tools, postman, figma, canva, and render. 
                 </h1>
                 <a href="https://drive.google.com/file/d/1zNVhm07LxI5UGl02kqlS98YK-QWicz8m/view?usp=drive_link" target='_blank' download><button className='mt-5 transition ease-in-out duration-300 md:px-5 px-3 py-2 text-neutral-800 border border-neutral-800 bg-white hover:text-white hover:bg-neutral-800 hover:border-white rounded-full'>Get My Resume</button></a>
                     
