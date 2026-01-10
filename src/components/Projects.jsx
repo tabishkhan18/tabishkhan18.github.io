@@ -189,7 +189,7 @@ const Projects = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="aboutimage py-10 lg:pe-5">
+                        <div className="aboutimage py-10 lg:pe-5 mx-5 lg:mx-0">
                             <img src="./triangle-calculator.jpg" alt="image" className='lg:w-[50rem] rounded-lg' />
                         </div>
                     </div>
