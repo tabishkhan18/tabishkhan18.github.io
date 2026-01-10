@@ -72,6 +72,7 @@ const WorkCard = ({ items }) => {
             <div className="px-10 lg:px-40 py-5 text-sm lg:text-lg bg-neutral-800 text-neutral-300">
               {item.desc}
             </div>}
+            {/* test */}
           </div>
         </div>
       ))}
