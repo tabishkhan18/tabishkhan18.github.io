@@ -11,7 +11,7 @@ const Navbar = () => {
                     <img className='w-32' src="/logo2.png" alt="" />
                 </div>
                 <div className="menu hidden md:flex">
-                    <ul className='flex gap-5'>
+                    <ul className='flex lg:gap-5 gap-0'>
                         <Link to='home' spy={true} smooth={true} offset={-100} duration={500} >
                             <li className='text-md text-neutral-400 hover:text-white transition ease-in-out duration-200 px-4 py-2 rounded-full border border-neutral-900  hover:border-neutral-500 cursor-pointer'>
                                 Home
