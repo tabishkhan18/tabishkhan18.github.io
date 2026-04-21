@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll'
 import { typingHeadings, resumeLink } from '../../constants/profile';
+import { name } from '../../constants/personal';
 
 const headings = typingHeadings;
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
                 <div className="homeInfo font-sans">
                     <div className="headings my-10">
                         <h4 className='text-neutral-400 lg:text-xl text-sm font-mono my-4'>Hello, I'm</h4>
-                        <h1 className='text-white lg:text-8xl text-5xl font-mono my-4'>Tabish Khan</h1>
+                        <h1 className='text-white lg:text-8xl text-5xl font-mono my-4'>{name}</h1>
                         <h3 className='text-neutral-400 lg:text-3xl text-xl font-mono my-4'>{currentHeading}<span className="blinking-cursor  lg:text-3xl text-xl">|</span></h3>
                         {/* testing */}
                     </div>
