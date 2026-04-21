@@ -1,7 +1,7 @@
-import ScrollUp from './ScrollUp'
+import ScrollUp from '../../ui/ScrollUp'
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 
-import SocialMedia from './SocialMedia';
+import SocialMedia from '../../ui/SocialMedia';
 
 const Contact = () => {
   const currentYear = new Date().getFullYear();
