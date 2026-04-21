@@ -23,7 +23,7 @@ const SocialMedia = () => {
         </a>
         
         {/* Whatsapp */}
-        <a href="https://wa.me/qr/UYQVEAZ3QRY3G1" target='_blank'>
+        <a href="https://wa.me/918188827067" target='_blank'>
           <div className="socialcontainer">
             <div className="icon social-icon-1-1">
               <svg viewBox="0 0 24 24" width="2rem" height="2rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="whatsapp" color='white'>
