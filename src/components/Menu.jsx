@@ -3,6 +3,14 @@ import { Link } from 'react-scroll'
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
+
+  const getNavItemClass = (section) =>
+    `my-2 w-1/2 text-md transition ease-in-out duration-200 rounded-full px-2 py-2 border cursor-pointer ${
+      activeSection === section
+        ? 'text-white border-neutral-500'
+        : 'text-neutral-400 border-neutral-900 hover:text-white hover:border-neutral-500'
+    }`;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,33 +39,33 @@ const Menu = () => {
       >
         <div className="p-4 text-black">
           <ul className="mt-4 flex flex-col items-center">
-            <li className="my-2 w-1/2 text-md text-neutral-400 hover:text-white transition ease-in-out duration-200 rounded-full px-2 py-2 border border-neutral-900  hover:border-neutral-500 cursor-pointer">
-              <Link to='home' spy={true} smooth={true} offset={-100} duration={500} >
+            <li className={getNavItemClass('home')}>
+              <Link to='home' spy={true} smooth={true} offset={-100} duration={500} onSetActive={setActiveSection} onClick={toggleMenu}>
                 Home
               </Link>
             </li>
-            <li className="my-2 w-1/2 text-md text-neutral-400 hover:text-white transition ease-in-out duration-200 rounded-full px-2 py-2 border border-neutral-900  hover:border-neutral-500 cursor-pointer">
-              <Link to='skills' spy={true} smooth={true} offset={-100} duration={500} >
+            <li className={getNavItemClass('skills')}>
+              <Link to='skills' spy={true} smooth={true} offset={-100} duration={500} onSetActive={setActiveSection} onClick={toggleMenu}>
                 Skills
               </Link>
             </li>
-            <li className="my-2 w-1/2 text-md text-neutral-400 hover:text-white transition ease-in-out duration-200 rounded-full px-2 py-2 border border-neutral-900  hover:border-neutral-500 cursor-pointer">
-              <Link to='projects' spy={true} smooth={true} offset={-100} duration={500} >
+            <li className={getNavItemClass('projects')}>
+              <Link to='projects' spy={true} smooth={true} offset={-100} duration={500} onSetActive={setActiveSection} onClick={toggleMenu}>
                 Projects
               </Link>
             </li>
-            <li className="my-2 w-1/2 text-md text-neutral-400 hover:text-white transition ease-in-out duration-200 rounded-full px-2 py-2 border border-neutral-900  hover:border-neutral-500 cursor-pointer">
-              <Link to='work' spy={true} smooth={true} offset={-100} duration={500} >
+            <li className={getNavItemClass('work')}>
+              <Link to='work' spy={true} smooth={true} offset={-100} duration={500} onSetActive={setActiveSection} onClick={toggleMenu}>
                 Work
               </Link>
             </li>
-            <li className="my-2 w-1/2 text-md text-neutral-400 hover:text-white transition ease-in-out duration-200 rounded-full px-2 py-2 border border-neutral-900  hover:border-neutral-500 cursor-pointer">
-              <Link to='about' spy={true} smooth={true} offset={-100} duration={500} >
+            <li className={getNavItemClass('about')}>
+              <Link to='about' spy={true} smooth={true} offset={-100} duration={500} onSetActive={setActiveSection} onClick={toggleMenu}>
                 About
               </Link>
             </li>
-            <li className="my-2 w-1/2 text-md text-neutral-400 hover:text-white transition ease-in-out duration-200 rounded-full px-2 py-2 border border-neutral-900  hover:border-neutral-500 cursor-pointer">
-              <Link to='contact' spy={true} smooth={true} offset={-100} duration={500} >
+            <li className={getNavItemClass('contact')}>
+              <Link to='contact' spy={true} smooth={true} offset={-100} duration={500} onSetActive={setActiveSection} onClick={toggleMenu}>
                 Contact
               </Link>
             </li>
