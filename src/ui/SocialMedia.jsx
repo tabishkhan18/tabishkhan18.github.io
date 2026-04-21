@@ -1,5 +1,6 @@
 // import React from 'react';
 import styled from 'styled-components';
+import { socialLinks } from '../constants/personal';
 
 const SocialMedia = () => {
   return (
@@ -7,7 +8,7 @@ const SocialMedia = () => {
       <div className="social-login-icons flex justify-center gap-10">
         
         {/* Insta */}
-        <a href="https://instagram.com/tabish_khan____/" target='_blank'>
+        <a href={socialLinks.instagram} target='_blank'>
           <div className="socialcontainer">
             <div className="icon social-icon-2-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24" strokeWidth={1} fill="currentColor" color='white'>
@@ -23,7 +24,7 @@ const SocialMedia = () => {
         </a>
         
         {/* Whatsapp */}
-        <a href="https://wa.me/918188827067" target='_blank'>
+        <a href={socialLinks.whatsapp} target='_blank'>
           <div className="socialcontainer">
             <div className="icon social-icon-1-1">
               <svg viewBox="0 0 24 24" width="2rem" height="2rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="whatsapp" color='white'>
@@ -39,7 +40,7 @@ const SocialMedia = () => {
         </a>
 
         {/* github */}
-        <a href="https://github.com/tabishkhan18" target='_blank'>
+        <a href={socialLinks.github} target='_blank'>
 
           <div className="socialcontainer">
             <div className="icon social-icon-4-4">
@@ -56,7 +57,7 @@ const SocialMedia = () => {
         </a>
 
         {/* LinkedIn */}
-        <a href="https://www.linkedin.com/in/tabishkhan1824/" target='_blank'>
+        <a href={socialLinks.linkedin} target='_blank'>
 
           <div className="socialcontainer">
             <div className="icon social-icon-3-3">

@@ -68,10 +68,15 @@ const WorkCard = ({ items }) => {
               <div>{item.location}</div>
             </div>
 
-            {item.desc &&
+            {item.desc && (
             <div className="px-10 lg:px-40 py-5 text-sm lg:text-lg bg-neutral-800 text-neutral-300">
-              {item.desc}
-            </div>}
+              <ul className="list-disc">
+                {item.desc.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
+            )}
             {/* test */}
           </div>
         </div>
